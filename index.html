@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Round Table - Amazing Race</title>
@@ -13,9 +13,14 @@
             text-align: center;
             padding: 20px;
         }
-        .logo {
-            max-width: 200px;
-            margin: 20px auto;
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 640px;
         }
         .button {
             display: block;
@@ -24,31 +29,43 @@
             margin: 10px auto;
             padding: 15px;
             background: linear-gradient(45deg, #ff0000, #ff7400, #ff1100);
-		}
-        .instagram {background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);}
-        .whatsapp {background: linear-gradient(45deg, #075e54, #128c7e, #25d366);}
-		.facebook {background: linear-gradient(45deg, #4047ab, #2c26e1, #5665d4);}
-		
+        }
+        .instagram { background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); }
+        .whatsapp { background: linear-gradient(45deg, #075e54, #128c7e, #25d366); }
+        .facebook { background: linear-gradient(45deg, #4047ab, #2c26e1, #5665d4); }
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .socials a {
+            color: white;
+            text-decoration: none;
+        }
+        .socials a i {
+            font-size: 3em;
+        }
     </style>
 </head>
 <body>
-<center>
- <video width="640" height="480" autoplay muted>
-  <source src="AR_2025.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
-</center>
-	
-<footer>
-	<h2>Follow Our Socials</h2>	
-<div style="display: flex; justify-content: center; gap: 40px; align-items: center;">
-	<a href="https://www.facebook.com/rt195zwartkops/" </a><i class="fa fa-facebook fa-3x"></i>
- 	<a href="https://www.instagram.com/zwartkops195/" </a><i class="fa fa-instagram fa-3x"></i>
-   	<a href="https://chat.whatsapp.com/H3ejJSoZsU33615iT3PkES" </a><i class="fa fa-whatsapp fa-3x"></i>
-</footer>
-<a href="https://rtzwartkops195.github.io/Home/" class="button Event">Go Back</a>
+    <div class="video-container">
+        <video width="640" height="480" autoplay muted>
+            <source src="AR_2025.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
+    <footer>
+        <h2>Follow Our Socials</h2>
+        <div class="socials">
+            <a href="https://www.facebook.com/rt195zwartkops/" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zwartkops195/" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/H3ejJSoZsU33615iT3PkES" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <a href="https://rtzwartkops195.github.io/Home/" class="button">Go Back</a>
 </body>
-		
 </html>
-
